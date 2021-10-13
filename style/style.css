@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --red-color: #e8491d;
+    --darkblue-color: #35424a;
+    --white-color: #ffffff;
+}
+
+body{
+    background-color: var(--white-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*header section*/
+
+header{
+    background: var(--darkblue-color);
+    border-bottom: var(--red-color) 3px solid;
+}
+
+.container{
+    width: 80%;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container h1{
+    margin: 2rem 0;
+    color: var(--white-color);
+}
+
+h1 span{
+    color: var(--red-color);
+}
+
+header ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 540;
+}
+
+header li{
+    list-style: none;
+}
+
+header a{
+    color: var(--white-color);
+    text-decoration: none;
+    margin: 0 1.2rem;
+    text-transform: uppercase;
+}
+
+header .current{
+    color: var(--red-color);
+}
+/* ---end header--- */
+
+
+
+/* ---hero section--- */
+.hero {
+    min-height: 60vh;
+    background-image: url(/images/showcase.jpg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.hero h1,p{
+    line-height: 1.4;
+    color: var(--white-color);
+}
+
+.hero h1{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.hero p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* ---end hero--- */
+
+/* ---newsletter--- */
+
+.newsletter {
+    background-color: var(--darkblue-color);
+}
+.newsletter .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 0;
+    color: var(--white-color);
+}
+
+input[type="email"]{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.newsletter .input{
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.newsletter input[type="email"]:focus{
+    outline: none;
+}
+
+button{
+    color: var(--white-color);
+    background-color: var(--red-color);
+    border: none;
+    padding: 0.5rem 1rem;
+}
+/* ---end newsletter--- */
+
+/* ---boxes--- */
+
+.boxes {
+    background-color: #f4f4f4;
+}
+
+.boxes .container{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.boxes .box img{
+    width: 25%;
+}
+
+.box {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.box p,h3{
+    margin: 0.5rem 0;
+    color: black;
+}
+/* ---end boxes---*/
+
+/* ---footer--- */
+footer{
+    background-color: var(--red-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .container{
+    padding: 2rem 0;
+    text-align: center;
+}
+/* ---end footer--- */
+
+.about{
+    margin: 2rem 0;
+}
+
+#main-col p{
+    color: var(--darkblue-color);
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    width: 95%;
+}
+
+#main-col .dark,aside{
+    color: var(--white-color);
+    background-color: var(--darkblue-color);
+    padding: 1rem;
+}
+.about .container{
+    display: flex;
+    justify-content: center;
+}
+
+aside{
+    height: 50%;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+
